@@ -20,6 +20,7 @@ fetch('data.json')
             name.classList.add("name")
 
             site.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+            site.target = "_blank"
             site.innerText = 'Read Online'
             site.classList.add("read")
 
