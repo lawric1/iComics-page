@@ -10,14 +10,18 @@
 
     <script type="text/javascript" src="data.json"></script>
     <script type="text/javascript" src="script.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
     <header id="home">
-        <nav>
-            <figure class="logo" id="logo">
+        <nav data-aos="fade-down" data-aos-duration="300">
+            <figure class="logo" id="logo" data-aos="fade-right" data-aos-duration="1000">
                 <a href="#home"><span style="color: #5bc0be; font-size: smaller">i</span>Comics</a>
             </figure>
-            <ul id="links">
+            <ul id="links" data-aos="fade-down" data-aos-duration="1000">
                 <a href="#home" onclick="toggle()"><li>Home</li></a>
                 <a href="#comics" onclick="toggle()"><li>Comics</li></a>
                 <a href="#about" onclick="toggle()"><li>About</li></a>
@@ -32,10 +36,10 @@
         </nav>
     </header>
 
-    <section class="comics" id="comics">
+    <section class="comics" id="comics" data-aos="fade-up" data-aos-duration="1000">
     </section>
 
-    <footer class="about" id="about">
+    <footer class="about" id="about" data-aos="fade-up">
         <main>
             <p>Site made for learning pourposes using <a href="//comicvine.gamespot.com/api/" class="api" target="_blank">Comic vines Api</a></p>
             <a class="fab fa-github icon" href="//github.com/lawric1" target="_blank" vvaria-hidden="true"></a>
@@ -43,7 +47,6 @@
     </footer>
 
     <script>
-
         function toggle() {
             var links = document.getElementById("links");
             var logo = document.getElementById("logo")
@@ -58,7 +61,9 @@
                 }
             }
         }
-
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
