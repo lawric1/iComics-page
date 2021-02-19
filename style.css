@@ -1,0 +1,159 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0f061f;
+    scroll-behavior: smooth;
+}
+
+a, p{
+    color: white;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo {
+    padding-left: 64px;
+}
+
+.logo a {
+    font-size: x-large;
+}
+.hamburguer {
+    display: none;
+}
+
+.hamburguer a {
+    font-size: 28px;
+}
+
+nav {
+    width: 100%;
+    height: 64px;
+    background-color: #1c2541;
+    border-bottom: 2px solid #5bc0be;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    padding-right:64px;
+    list-style-type: none;
+    display: flex;
+}
+
+ul a {
+    padding-left: 32px;
+    color: #bbb;
+    font-size: larger;
+}
+
+ul a:hover {
+    color: #5bc0be;
+}
+
+.comics {
+    padding: 80px 32px 32px 32px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 16px;
+    width: 200px;
+    background-color: #1c2541;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.poster {
+    height: 80%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.name {
+    height: 32px;
+    font-size: small;
+    color: #bbb;
+}
+
+.read {
+    margin-bottom: 16px;
+    font-size: larger;
+}
+
+.read:hover {
+    color: #5bc0be;
+}
+
+.about {
+    width: 100%;
+    height: 200px;
+    background-color: #1c2541;
+}
+
+.about main{
+    height: 100%;
+    color: #bbb;
+    font-size: 36px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.api {
+    color: #5bc0be !important;
+}
+
+.about p {
+    font-size: 16px;
+}
+
+.icon {
+    font-size: larger;
+    color: #ccc;
+}
+
+.icon:hover {
+    color: #eee;
+}
+
+@media screen and (max-width: 600px) {
+
+    .logo {
+        margin: auto;
+        padding: 12px;
+    }
+
+    .hamburguer {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .hamburguer a {
+        float: right;
+    }
+
+    nav {
+        height: auto;
+        position: fixed;
+        align-items: unset;
+    }
+
+    #links {
+        margin: 0;
+        padding-bottom: 32px;
+        display: none;
+    }
+}

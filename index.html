@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iComics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/46d79e12fc.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <figure class="logo" id="logo">
+                <a href="#home"><span style="color: #5bc0be; font-size: smaller">i</span>Comics</a>
+            </figure>
+            <ul id="links">
+                <a href="#home" onclick="toggle()"><li>Home</li></a>
+                <a href="#comics" onclick="toggle()"><li>Comics</li></a>
+                <a href="#about" onclick="toggle()"><li>About</li></a>
+            </ul>
+
+            <figure class="hamburguer">
+                <a href="javascript:void(0);" onclick="toggle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </figure>
+
+        </nav>
+    </header>
+
+    <section class="comics" id="comics">
+    </section>
+
+    <footer class="about" id="about">
+        <main>
+            <p>Site made for learning pourposes using <a href="https://comicvine.gamespot.com/api/" class="api">Comic vines Api</a></p>
+            <a class="fab fa-github icon" href="https://github.com/lawric1" target="_blank" vvaria-hidden="true"></a>
+        </main>
+    </footer>
+
+    <script>
+
+        function toggle() {
+            var links = document.getElementById("links");
+            var logo = document.getElementById("logo")
+
+            if (screen.width < 600) {
+                if (links.style.display === "block") {
+                    links.style.display = "none";
+                    logo.style.display = "block";
+                } else {
+                    links.style.display = "block";
+                    logo.style.display = "none";
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
